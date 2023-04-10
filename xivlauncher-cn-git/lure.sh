@@ -25,6 +25,11 @@ checksums=(
             'SKIP'
           )
 
+version() {
+	cd "$srcdir/XIVLauncher.Core"
+	printf "$version.r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
 prepare() {
 	cd "${srcdir}/XIVLauncher.Core"
 	mv "${srcdir}/FFXIVQuickLauncher" "${srcdir}/XIVLauncher.Core/lib/"
