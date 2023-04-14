@@ -18,7 +18,7 @@ checksums=(
           )
 deps_fedora=('libXss.so.1' 'gtk3' 'nftables' 'iproute')
 deps_opensuse=('libXss1' 'gtk3' 'nftables' 'iproute2')
-deps_ubuntu=('libXss1' 'libgtk-3-0' 'nftables' 'iproute2')
+deps_ubuntu=('libxss1' 'libgtk-3-0' 'nftables' 'iproute2')
 
 package() {
     cd "Clash for Windows-$version-x64-linux"
