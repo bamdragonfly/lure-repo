@@ -1,5 +1,5 @@
 name='xivlauncher-cn'
-version='1.0.3.2'
+version='1.0.3.3'
 release='1'
 desc='Custom Launcher for Final Fantasy XIV Online CN (Crossplatform rewrite)'
 desc_zh='XIVLauncher 的跨平台版本，附带一个为最终幻想14调整过的 WINE.'
@@ -16,7 +16,7 @@ build_deps_opensuse=('dotnet-sdk-6.0' 'aria2' 'libSDL2-2_0-0' 'libsecret-1-0' 'l
 
 build_deps_arch=('dotnet-sdk-6.0' 'python-yaml' 'git' 'aria2' 'sdl2' 'lib32-sdl2' 'libsecret' 'attr' 'lib32-attr' 'fontconfig' 'lib32-fontconfig' 'lcms2' 'lib32-lcms2' 'libxml2' 'lib32-libxml2' 'libxcursor' 'lib32-libxcursor' 'libxrandr' 'lib32-libxrandr' 'libxdamage' 'lib32-libxdamage' 'libxi' 'lib32-libxi' 'gettext' 'lib32-gettext' 'freetype2' 'lib32-freetype2' 'glu' 'lib32-glu' 'libsm' 'lib32-libsm' 'gcc-libs' 'lib32-gcc-libs' 'libpcap' 'lib32-libpcap' 'faudio' 'lib32-faudio' 'desktop-file-utils' 'jxrlib')
 
-sources=("git+https://github.com/ottercorp/XIVLauncher.Core.git#commit=48bcc13256e538f0ae0a4b94891e57c9c5aa3250")
+sources=("git+https://github.com/ottercorp/XIVLauncher.Core.git#commit=5a0f1b117302195721a6574cb0138f57071d15ef")
 checksums=('SKIP')
 
 prepare() {
