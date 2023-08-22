@@ -1,5 +1,5 @@
 name='clash-for-windows-bin'
-version=0.20.23
+version=0.20.32
 release=1
 desc='A Windows/macOS/Linux GUI based on Clash and Electron.'
 architectures=('amd64')
