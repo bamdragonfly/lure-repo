@@ -22,8 +22,6 @@ curl https://www.arsenm.dev/lure.sh | bash
 LURE 当然是有 AUR 的版本啦： [linux-user-repository-bin](https://aur.archlinux.org/packages/linux-user-repository-bin)
 
 ### 添加橙猫猫的 Lure 仓库
-
-实际上就比官方库多一个 **xivlauncher-cn** ...... 但是橙猫猫懒，或许之后会发 PR 把 **xivlauncher-cn** 合并到 **Lure-repo** 官方库中。（ 坏诶！AUR 上面的非 -git 包都多久没更新了喂！顺手添加 Arch 的支持，万一 -git 包也挂着不动至少橙猫猫还是更 lure 这边的，主要还是给 **Fedora/Opensuse** 等发行版用。)
 ```bash
 lure ar -n bamcat -u https://github.com/bamdragonfly/lure-repo
 
