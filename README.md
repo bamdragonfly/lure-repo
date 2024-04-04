@@ -10,7 +10,7 @@ Web interface: https://lure.arsenm.dev
 
 该安装脚本会自动下载并安装适用于您系统的 LURE 工具包。直接在终端黏贴如下命令（国内用户记得终端上代理）：
 ```bash
-curl https://www.arsenm.dev/lure.sh | bash
+curl -fsSL lure.sh/install | bash
 ```
 
 **中药说明**: 这是不推荐的安装方式，因为直接执行 URL 内的内容可能会造成意料之外的事故，为了避免恶意代码，请下载此脚本且检查后再运行。
