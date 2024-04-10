@@ -37,10 +37,5 @@ lure in xivlauncher-cn-git
 ```
 ### 额外的东西：
 
-**clash-for-windows-bin**
-给 Fedora/Opensuse 用户使用的 cfw-bin 包。
-```bash
-lure in clash-for-windows-bin
-```
-**Fedora37 无法安装 Service Mode 的解决参考：**
-https://github.com/Fndroid/clash_for_windows_pkg/issues/3949
+**clash-verge-rev**
+https://github.com/clash-verge-rev/clash-verge-rev
