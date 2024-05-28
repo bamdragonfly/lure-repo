@@ -16,7 +16,7 @@ build_deps_opensuse=('aria2' 'libSDL2-2_0-0' 'libsecret-1-0' 'libattr1' 'fontcon
 
 build_deps_arch=('aria2' 'sdl2' 'libsecret' 'attr' 'fontconfig' 'lcms2' 'libxml2' 'libxcursor' 'libxrandr' 'libxdamage' 'libxi' 'gettext' 'freetype2' 'glu' 'libsm' 'gcc-libs' 'libpcap' 'desktop-file-utils' 'jxrlib')
 
-sources=("git+https://github.com/ottercorp/XIVLauncher.Core.git#commit=d3c99fd50153af48a9462fb8807af462dd191155"
+sources=("git+https://github.com/ottercorp/XIVLauncher.Core.git#commit=d8b085b3aa84eaeac9d843cbc29c10b6eaf27f0d"
          "https://download.visualstudio.microsoft.com/download/pr/19144d78-6f95-4810-a9f6-3bf86035a244/23f4654fc5352e049b517937f94be839/dotnet-sdk-6.0.421-linux-x64.tar.gz?~archive=false")
 checksums=(
             'SKIP'
