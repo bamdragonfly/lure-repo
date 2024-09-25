@@ -1,5 +1,5 @@
 name='xivlauncher-cn'
-version='1.0.7.2'
+version='1.1.0.0'
 release='1'
 desc='Custom Launcher for Final Fantasy XIV Online CN (Crossplatform rewrite)'
 desc_zh='XIVLauncher 的跨平台版本，附带一个为最终幻想14调整过的 WINE.'
@@ -16,19 +16,23 @@ build_deps_opensuse=('aria2' 'libSDL2-2_0-0' 'libsecret-1-0' 'libattr1' 'fontcon
 
 build_deps_arch=('aria2' 'sdl2' 'libsecret' 'attr' 'fontconfig' 'lcms2' 'libxml2' 'libxcursor' 'libxrandr' 'libxdamage' 'libxi' 'gettext' 'freetype2' 'glu' 'libsm' 'gcc-libs' 'libpcap' 'desktop-file-utils' 'jxrlib')
 
-sources=("git+https://github.com/ottercorp/XIVLauncher.Core.git#commit=d8b085b3aa84eaeac9d843cbc29c10b6eaf27f0d"
-         "https://download.visualstudio.microsoft.com/download/pr/19144d78-6f95-4810-a9f6-3bf86035a244/23f4654fc5352e049b517937f94be839/dotnet-sdk-6.0.421-linux-x64.tar.gz?~archive=false")
+sources=("git+https://github.com/ottercorp/XIVLauncher.Core.git#commit=53687994ec1653ca29ce2ec7e6bb196691d36a31"
+         "https://download.visualstudio.microsoft.com/download/pr/db901b0a-3144-4d07-b8ab-6e7a43e7a791/4d9d1b39b879ad969c6c0ceb6d052381/dotnet-sdk-8.0.401-linux-x64.tar.gz?~archive=false"
+	 "https://github.com/bamdragonfly/XIVLauncher.Core/raw/refs/heads/cn/misc/linux_distrib/XIVLauncher.desktop"
+  	)
 checksums=(
             'SKIP'
             'SKIP'
+	    'SKIP'
           )
 
 prepare() {
-	cd "${srcdir}/XIVLauncher.Core"
+	cd "${srcdir}/XIVLauncher.Core" || exit
 	git submodule update --init --recursive
-	mkdir dotnet
-	tar zxf "${srcdir}/dotnet-sdk-6.0.421-linux-x64.tar.gz" -C "${srcdir}/XIVLauncher.Core/dotnet"
-	mkdir build
+	mkdir -p dotnet
+	tar zxf "${srcdir}/dotnet-sdk-8.0.401-linux-x64.tar.gz" -C "${srcdir}/XIVLauncher.Core/dotnet"
+	cp -r "${srcdir}/XIVLauncher.desktop" "${srcdir}/XIVLauncher.Core/misc/linux_distrib"
+	mkdir -p build
 }
 
 build() {
