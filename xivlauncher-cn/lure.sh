@@ -1,5 +1,5 @@
 name='xivlauncher-cn'
-version='1.1.0.0'
+version='1.1.0.3'
 release='1'
 desc='Custom Launcher for Final Fantasy XIV Online CN (Crossplatform rewrite)'
 desc_zh='XIVLauncher 的跨平台版本，附带一个为最终幻想14调整过的 WINE.'
