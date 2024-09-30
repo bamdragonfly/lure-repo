@@ -28,12 +28,12 @@ lure ar -n bamcat -u https://github.com/bamdragonfly/lure-repo
 ```
 ### 安装 xivlauncher-cn
 ```bash
-lure in xivlauncher-cn
+lure in -c xivlauncher-cn
 ```
 
 ### 或安装 xivlauncher-cn-git
 ```bash
-lure in xivlauncher-cn-git
+lure in -c xivlauncher-cn-git
 ```
 ### 额外的东西：
 
