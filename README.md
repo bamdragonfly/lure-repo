@@ -25,15 +25,9 @@ LURE 当然是有 AUR 的版本啦： [linux-user-repository-bin](https://aur.ar
 ```bash
 lure ar -n bamcat -u https://github.com/bamdragonfly/lure-repo
 
-```
 ### 安装 xivlauncher-cn
 ```bash
 lure in -c xivlauncher-cn
-```
-
-### 或安装 xivlauncher-cn-git
-```bash
-lure in -c xivlauncher-cn-git
 ```
 ### 额外的东西：
 
