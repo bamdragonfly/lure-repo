@@ -1,5 +1,5 @@
 name='xivlauncher-cn'
-version='1.1.2.4'
+version='1.1.2.5'
 release='1'
 desc='Custom Launcher for Final Fantasy XIV Online CN (Crossplatform rewrite)'
 desc_zh='XIVLauncher 的跨平台版本，附带一个为最终幻想14调整过的 WINE.'
@@ -8,7 +8,7 @@ maintainer="bamcat <bamdragonfly@gmail.com>"
 architectures=('amd64')
 license=('GPL-3.0-or-later')
 provides=('xivlauncher-cn')
-conflicts=('xivlauncher-cn-git')
+conflicts=('xivlauncher-cn')
 
 build_deps_fedora=('aria2' 'SDL2' 'libsecret' 'libattr' 'fontconfig' 'lcms2' 'libXcursor' 'libXrandr' 'libXdamage' 'libXi' 'gettext' 'freetype' 'mesa-libGLU' 'libSM' 'libgcc' 'libpcap' 'libFAudio' 'desktop-file-utils' 'jxrlib' 'git')
 
@@ -16,7 +16,7 @@ build_deps_opensuse=('aria2' 'libSDL2-2_0-0' 'libsecret-1-0' 'libattr1' 'fontcon
 
 build_deps_arch=('aria2' 'sdl2' 'libsecret' 'attr' 'fontconfig' 'lcms2' 'libxml2' 'libxcursor' 'libxrandr' 'libxdamage' 'libxi' 'gettext' 'freetype2' 'glu' 'libsm' 'gcc-libs' 'libpcap' 'desktop-file-utils' 'jxrlib')
 
-sources=("git+https://github.com/ottercorp/XIVLauncher.Core.git#commit=870b29ca0034d6709707bb947fe69a166cb46969"
+sources=("git+https://github.com/ottercorp/XIVLauncher.Core.git"
          "https://download.visualstudio.microsoft.com/download/pr/db901b0a-3144-4d07-b8ab-6e7a43e7a791/4d9d1b39b879ad969c6c0ceb6d052381/dotnet-sdk-8.0.401-linux-x64.tar.gz?~archive=false"
 	 "https://github.com/bamdragonfly/XIVLauncher.Core/raw/refs/heads/cn/misc/linux_distrib/XIVLauncher.desktop"
   	)
